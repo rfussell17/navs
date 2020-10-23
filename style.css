@@ -1,0 +1,107 @@
+/* <!-- white - #f8f8f8;
+grey - #707070;
+lightblue - #1792D2;
+dark blue - #143774;
+h1 lora - 3.375rem
+sub: ubuntu bold 1rem
+nav ubuntu bold -1rem
+--> */
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 675px) {
+  .container-nav {
+      flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+}
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792D2;
+  font-size: .75rem;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+  margin: 0 auto;
+
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center
+}
+
+.nav-item {
+margin-left: 2em;
+text-transform: uppercase;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: .25em 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 2px solid #707070
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+@media (max-width: 675px) {
+  .nav-list {
+      flex-direction: column;
+  }
+
+  .nav-li {
+    margin: .5em;
+
+  }
+
+  .current-page {
+    border: none;
+  }
+}
